@@ -1,1 +1,1 @@
-# bucket-list-www
+# bucket-list-web
