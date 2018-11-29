@@ -1,0 +1,83 @@
+.resp-sharing-button__link,
+.resp-sharing-button__icon {
+  display: inline-block
+}
+
+.resp-sharing-button__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.resp-sharing-button {
+  transition: 25ms ease-out;
+  padding: .25em 1.5em;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif
+}
+
+.resp-sharing-button__icon svg {
+  width: 100%;
+  height: 2em;
+  margin-right: 0.4em;
+  vertical-align: top
+}
+
+.resp-sharing-button--small svg {
+  margin: 0;
+  vertical-align: middle
+}
+
+/* Non solid icons get a stroke */
+.resp-sharing-button__icon {
+  stroke: #fff;
+  fill: none
+}
+
+/* Solid icons get a fill */
+.resp-sharing-button__icon--solid,
+.resp-sharing-button__icon--solidcircle {
+  fill: #fff;
+  stroke: none
+}
+
+.resp-sharing-button--facebook svg {
+  fill: #3b5998
+}
+
+.resp-sharing-button--facebook:hover svg {
+  fill: #2d4373
+}
+
+.resp-sharing-button--email svg {
+  fill: #777
+}
+
+.resp-sharing-button--email:hover svg {
+  fill: #5e5e5e
+}
+
+.resp-sharing-button--facebook svg {
+  fill: #3b5998;
+}
+
+.resp-sharing-button--facebook:hover svg,
+.resp-sharing-button--facebook:active svg {
+  fill: #2d4373;
+}
+
+.resp-sharing-button--twitter svg {
+  fill: #55acee;
+}
+
+.resp-sharing-button--twitter:hover svg,
+.resp-sharing-button--twitter:active svg {
+  fill: #2795e9;
+}
+
+.resp-sharing-button--email svg {
+  fill: #777777;
+}
+
+.resp-sharing-button--email:hover svg,
+.resp-sharing-button--email:active svg {
+  fill: #5e5e5e;
+}
