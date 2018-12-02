@@ -12,8 +12,8 @@ function HeroContainer() {
 function HeroImage() {
   return (
     <img
-      src="https://images.unsplash.com/photo-1522582935453-38011c9348e9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24ddfead0fb122e33059d2605f036f02&auto=format&fit=crop&w=1951&q=80"
-      alt="Sunset"
+      src="../static/iphonesX.png"
+      alt="2 iPhones running the app"
     />
   );
 }

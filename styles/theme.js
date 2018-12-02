@@ -36,7 +36,7 @@ function Styles() {
         header h1 {
           font-weight: bold;
           color: #034752;
-          padding: .8em;
+          padding: 0.8em;
         }
 
         .Headline {
@@ -46,7 +46,7 @@ function Styles() {
 
         .Headline h2 {
           font-size: 3.2em;
-          padding-bottom: .4em;
+          padding-bottom: 0.4em;
         }
 
         .Headline p {
@@ -95,7 +95,7 @@ function Styles() {
         .BackButton,
         .FAQ button {
           color: white;
-          background-color: #009E74;
+          background-color: #009e74;
           margin-top: 1.4em;
           height: 2.4em;
           font-size: 1.2em;
@@ -106,7 +106,7 @@ function Styles() {
           display: flex;
           justify-content: space-between;
           width: 100%;
-          margin-top: .8em;
+          margin-top: 0.8em;
         }
 
         .Headline,
@@ -149,24 +149,34 @@ function Styles() {
         .Campaign h3,
         .FAQ h3 {
           font-size: 1.6em;
-          margin: 0 0 .8em 0;
+          margin: 0 0 0.8em 0;
           color: steel;
         }
 
-        .About, .FAQ div {
+        .About,
+        .FAQ div {
           width: 64%;
         }
 
         .About p {
-          margin: .8em 0;
+          margin: 0.8em 0;
         }
 
         .About ul {
           padding-left: 1.2em;
         }
 
-        .About li {
-          margin-bottom: 1.2em;
+        .About li,
+        .About div {
+          margin-bottom: .8em;
+        }
+
+        .VisionVideo * {
+          max-width: 100%;
+        }
+
+        .AppPreview * {
+          max-width: 100%;
         }
 
         .Support {
@@ -177,13 +187,13 @@ function Styles() {
           font-weight: bold;
         }
 
-        .Support button
-         {
+        .Support button {
           text-align: left;
           margin: 1.6em 0;
-          padding: .8em;
-          background: #009E74;
+          padding: 0.8em;
+          background: #009e74;
           color: white;
+          width: 100%;
         }
 
         .Support * {
@@ -192,7 +202,7 @@ function Styles() {
 
         .FAQ p,
         .FAQ h4 {
-          margin-bottom: .8em;
+          margin-bottom: 0.8em;
         }
 
         .FAQ p {
@@ -210,14 +220,13 @@ function Styles() {
           width: 32%;
         }
 
-
         .FAQ a {
-          color: #009E74;
+          color: #009e74;
         }
 
         .FAQ textarea {
           margin: 1.6em 0;
-          padding: .8em;
+          padding: 0.8em;
           height: 40%;
           border: 1px solid lightgrey;
         }
@@ -241,26 +250,25 @@ function Styles() {
           }
         }
         @media only screen and (max-width: 667px) {
-
           header h1 {
             font-weight: bold;
             color: #034752;
-            padding: .4em;
+            padding: 0.4em;
           }
 
           .Headline {
             height: 100%;
-            padding: 1.6em .8em;
+            padding: 1.6em 0.8em;
             text-align: center;
           }
 
           .Headline p {
             display: none;
           }
-  
+
           .Headline h2 {
             font-size: 1.6em;
-            padding-bottom: .4em;
+            padding-bottom: 0.4em;
           }
 
           .HeroContainer {
@@ -276,7 +284,7 @@ function Styles() {
           }
 
           .HeroInfo {
-            padding: .8em 0;
+            padding: 0.8em 0;
           }
 
           .Menu li {
@@ -297,17 +305,19 @@ function Styles() {
           }
 
           .About ul {
-            padding-left: .8em;
+            padding-left: 0.8em;
           }
 
           .About p,
           .About h3,
           .Support h3,
-          .FAQ h3,
-          .FAQ h4
-           {
-            padding-left: .8em;
-            padding-right: .8em;
+          .FAQ h3 {
+            padding-left: 0.8em;
+            padding-right: 0.8em;
+          }
+
+          .FAQ h4 {
+            padding-left: 1.2em;
           }
 
           .FAQ {
@@ -320,8 +330,8 @@ function Styles() {
           }
 
           .FAQ textarea {
-            margin-left: .8em;
-            margin-right: .8em;
+            margin-left: 0.8em;
+            margin-right: 0.8em;
             height: 8em;
           }
         }

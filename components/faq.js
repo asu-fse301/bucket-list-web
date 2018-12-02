@@ -14,31 +14,31 @@ function FAQ() {
               name: 'Katelin Jensen',
               title: 'CEO',
               details:
-                'Lead in organizing meeting dates/time, getting all assignments / team photos turned in on time (group effort), updating assignments tasks on Trello (group effort)',
+                'Leads in organizing meetings, getting all assignments and team photos turned in, updating tasks on project board',
             },
             {
               name: 'Harley Sweigart',
-              title: 'Chief Financial Officer',
+              title: 'CFO',
               details:
-                'Researched on what potential costs would be in regards to app development, database management, company insurance, employee wages, advertisements as well as potential sources of revenue.',
+                'Researches potential costs in regards to app development, database management, company insurance, employee wages, advertising, along with potential sources of revenue',
             },
             {
               name: 'Macayla Anderson',
-              title: 'Chief Operating Officer',
+              title: 'COO',
               details:
-                'Helped manage customer testing and provided insights into the importance of market research and how to utilize it effectively. Also provided major support when preparing financial statements due to previous knowledge and experience with business.',
+                'Manages customer testing and provides insight into market research, along with how to utilize it effectively, also provides major support when preparing financial statements due to previous knowledge and experience with business',
             },
             {
               name: 'Danny Tunney',
-              title: 'Chief Technology Officer',
+              title: 'CTO',
               details:
-                'Architected app and website. Wrote and maintained the code.',
+                'Architects app and website, writes and maintains the code',
             },
             {
               name: 'Sangjukta Chowdhury',
-              title: 'Chief Creative Officer',
+              title: 'CCO',
               details:
-                'Lead the Brainstorming sessions, researched other available ideas and formulated features that had a competitive edge over other products out their, considered customer feedback to come up with other new ideas and features.',
+                'Leads the Brainstorming sessions, researches other available ideas and formulates features that have a competitive edge over other products, considers customer feedback for new ideas and features',
             },
           ].map(({ details, name, title }) => (
             <li key={name}>

@@ -28,6 +28,33 @@ function Campaign() {
             dreams, hence the name Genie
           </li>
         </ul>
+        <h3 children="The Vision" />
+        <div className="VisionVideo">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/tnbLDoDboDQ"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
+        <h3 children="The App" />
+        <div
+          className="AppPreview"
+          data-snack-id="@dtun/bucket-list-app"
+          data-snack-platform="ios"
+          data-snack-preview="false"
+          data-snack-theme="light"
+          style={{
+            overflow: 'hidden',
+            background: '#fafafa',
+            border: '1 solid rgba(0,0,0,.08)',
+            borderRadius: 4,
+            height: 505,
+          }}
+        />
+        <script async src="https://snack.expo.io/embed.js" />
       </div>
       <div className="Support">
         <h3 children="Support" />
