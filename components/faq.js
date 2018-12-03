@@ -1,7 +1,9 @@
 import { useFormInput } from '../utils/useFormInput';
 
 function FAQ() {
-  let { question, onChange } = useFormInput();
+  let { question, onChange: onChangeQuestion } = useFormInput();
+  let { email, onChange: onChangeEmail } = useFormInput();
+  let host = typeof window !== 'undefined' ? window.location.host : 'genie';
 
   return (
     <section className="FAQ">
@@ -64,14 +66,25 @@ function FAQ() {
           individuals who provide support to the campaign.
         </p>
       </div>
-      <form>
+      <form action="https://formspree.io/dtun@asu.edu" method="POST">
         <textarea
-          onChange={e => onChange(e.target.value)}
+          onChange={e => onChangeQuestion(e.target.value)}
+          placeholder="Ask anything..."
           required
           type="text"
           value={question}
         />
-        <button children="Ask a question" type="submit" />
+        <input
+          onChange={e => onChangeEmail(e.target.value)}
+          name="email"
+          placeholder="example@domain.com"
+          required
+          type="email"
+          value={email}
+        />
+        <button children="Submit Question" type="submit" />
+        <input name="_next" type="hidden" value={`https://${host}/thanks`} />
+        <input name="_format" type="hidden" value="plain" />
       </form>
     </section>
   );

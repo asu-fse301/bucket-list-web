@@ -55,6 +55,10 @@ function Styles() {
           font-weight: light;
         }
 
+        .Thanks {
+          text-align: center;
+        }
+
         .HeroContainer {
           display: flex;
           width: 100%;
@@ -231,6 +235,12 @@ function Styles() {
           border: 1px solid lightgrey;
         }
 
+        .FAQ input {
+          margin: 1.6em 0;
+          padding: 0.8em;
+          border: 1px solid lightgrey;
+        }
+
         footer p {
           margin: 2em 0;
           text-align: center;
@@ -264,6 +274,10 @@ function Styles() {
 
           .Headline p {
             display: none;
+          }
+
+          .Headline p {
+            display: unset;
           }
 
           .Headline h2 {
@@ -333,6 +347,11 @@ function Styles() {
             margin-left: 0.8em;
             margin-right: 0.8em;
             height: 8em;
+          }
+
+          .FAQ input {
+            margin-left: 0.8em;
+            margin-right: 0.8em;
           }
         }
         @media only screen and (max-width: 374px) {
